@@ -28,3 +28,4 @@ Open [the local dashboard](http://localhost:8501). Use the sidebar to filter the
 The [Kaggle dataset](https://www.kaggle.com/datasets/prasad22/healthcare-dataset) is synthetic. The CSV included here came from a [public copy on Hugging Face](https://huggingface.co/datasets/Kilos1/healthcare_dataset/blob/main/healthcare_dataset.csv). Ingestion writes the source records to `raw_healthcare`. Transformation removes exact duplicates, saves invalid records to `rejected_healthcare`, and adds analysis fields to `clean_healthcare`.
 
 The included CSV has 55,500 rows. Transformation removes 534 duplicates and produces 54,966 valid admissions. Admissions count records. Average stay uses the difference between discharge and admission dates in days. The billing metric sums nonnegative amounts. The 106 negative amounts remain in the cleaned records with a flag.
+# healthcare-analytics
